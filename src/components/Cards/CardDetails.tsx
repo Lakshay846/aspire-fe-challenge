@@ -7,7 +7,6 @@ export default function CardDetail() {
 
   return (
     <div className="mb-4 rounded-xl bg-[#F5F9FF] shadow-sm">
-      {/* Header */}
       <button
         type="button"
         onClick={() => setIsOpen((prev) => !prev)}
@@ -27,7 +26,6 @@ export default function CardDetail() {
         </span>
       </button>
 
-      {/* Content */}
       {isOpen && (
         <div className="px-4 pb-4 text-sm text-gray-600 space-y-2">
           <div className="flex justify-between">

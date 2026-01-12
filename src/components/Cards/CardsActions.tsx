@@ -23,9 +23,7 @@ export default function CardActions() {
           key={action.id}
           className="flex cursor-pointer flex-col items-center gap-2 text-center text-xs text-gray-700"
         >
-          {/* Icon placeholder */}
           <ActionIcons name={action.icon!} />
-
           <span className="font-medium">{action.label}</span>
         </div>
       ))}

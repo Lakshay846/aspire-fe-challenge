@@ -77,7 +77,6 @@ export default function CardCarousel({
         onToggleDetails={() => setShowCardDetails((prev) => !prev)}
       />
 
-      {/* Pagination dots */}
       <div className="mt-4 flex justify-center gap-2">
         {cards.map((_, index) => {
           const isActive = index === activeIndex;

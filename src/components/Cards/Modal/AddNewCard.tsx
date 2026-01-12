@@ -13,7 +13,7 @@ type Card = {
   cvv: string;
 };
 
-export type AddNewCardProps = {
+type AddNewCardProps = {
   isOpen: boolean;
   onClose: () => void;
   onSubmit: (card: Card) => void;

@@ -22,7 +22,6 @@ export default function CardPreview({
 }: CardPreviewProps) {
   return (
     <div className="mb-6">
-      {/* View card details */}
       <div className="mb-2 flex justify-end">
         <button
           type="button"
@@ -34,9 +33,7 @@ export default function CardPreview({
         </button>
       </div>
 
-      {/* Card */}
       <div className="relative w-full rounded-xl bg-[#01D167] p-6 text-white">
-        {/* Card Brand */}
         <div className="flex justify-end">
           <span className="text-sm font-semibold">
             <img src={Logo} alt="aspire logo" />
@@ -45,7 +42,6 @@ export default function CardPreview({
 
         <div className="mt-4 text-[1.5rem] font-bold">{card.holderName}</div>
 
-        {/* Card Number */}
         <div className="mt-6 flex items-center gap-[1.5rem]">
           {showCardDetails ? (
             card.number.map((group) => (
@@ -72,7 +68,6 @@ export default function CardPreview({
           )}
         </div>
 
-        {/* Card Meta */}
         <div className="mt-4 flex gap-6 text-[13px] font-bold align-start">
           <div>
             <span className="">Thru:</span> {card.expiry}

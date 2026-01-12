@@ -87,16 +87,13 @@ export default function Transactions() {
         </span>
       </button>
 
-      {/* Accordion Content */}
       {isOpen && (
         <>
           <div className="px-4 pb-4 bg-white pt-6">
             <ul className="space-y-5">
               {TRANSACTIONS.map((tx) => (
                 <li key={tx.id} className="flex items-center justify-between">
-                  <div className="flex items-start gap-3">
-                    {/* Icon placeholder */}
-                    
+                  <div className="flex items-start gap-3">                    
                     <TransactionIcons name={tx.icon || "flights"} type={tx.type} />
 
                     <div>

@@ -18,6 +18,12 @@ const NAV_ITEMS: NavItem[] = [
   { id: 'settings', label: 'Settings', icon: 'settings' }
 ];
 
+type NavLinkProps = {
+  label: string;
+  active?: boolean;
+  icon: NavIcon;
+};
+
 const Sidebar: FC = () => {
   return (
     <aside className="w-1/4 min-h-screen bg-[#0C365A] text-white flex flex-col px-16 py-16">
@@ -30,7 +36,6 @@ const Sidebar: FC = () => {
         </p>
       </div>
 
-      {/* Navigation */}
       <nav className="flex-1">
         <ul className="space-y-4">
           {NAV_ITEMS.map((item) => (
@@ -45,12 +50,6 @@ const Sidebar: FC = () => {
 };
 
 export default Sidebar;
-
-type NavLinkProps = {
-  label: string;
-  active?: boolean;
-  icon: NavIcon;
-};
 
 const NavLink: FC<NavLinkProps> = ({ label, active, icon }) => {
   return (
