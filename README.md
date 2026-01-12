@@ -32,4 +32,7 @@ Expiry generator
 
 CVV generator
 
+# Live Preview
+https://lakshay846.github.io/aspire-fe-challenge/
+
 
