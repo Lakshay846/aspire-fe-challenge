@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import Logo from "../../assets/Logo.svg";
-import type { NavIcon } from './sidebar.types';
+import type { NavIcon } from '../../types/sidebar.types';
 import SidebarIcon from './SidebarIcon';
 
 type NavItem = {

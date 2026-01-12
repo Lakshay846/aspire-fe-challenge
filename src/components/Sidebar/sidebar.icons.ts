@@ -4,7 +4,7 @@ import payments from '../../assets/Payments.svg';
 import credit from '../../assets/Credit.svg';
 import settings from '../../assets/Account.svg';
 
-import type { NavIcon } from './sidebar.types';
+import type { NavIcon } from '../../types/sidebar.types';
 
 export const SIDEBAR_ICONS: Record<NavIcon, string> = {
   home,

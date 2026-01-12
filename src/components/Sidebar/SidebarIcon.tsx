@@ -1,5 +1,5 @@
 import { SIDEBAR_ICONS } from './sidebar.icons';
-import type { NavIcon } from './sidebar.types';
+import type { NavIcon } from '../../types/sidebar.types';
 
 type Props = {
   name: NavIcon;

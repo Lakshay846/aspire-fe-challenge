@@ -1,0 +1,1 @@
+export type TransactionIcon = 'flights' | 'megaphone' | 'storage';
