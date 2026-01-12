@@ -1,4 +1,4 @@
-This project is a responsive card management dashboard built using React and TypeScript, styled with Tailwind CSS.
+This project is a card management dashboard built using React and TypeScript, styled with Tailwind CSS.
 
 Users can view a list of cards, toggle card details, and view transactions.
 
@@ -13,7 +13,7 @@ A “Add New Card” modal allows users to add a new card with system-generated 
 
 # Installation
 - git clone https://github.com/Lakshay846/aspire-fe-challenge.git
-- - cd aspire-fe-challenge
+- cd aspire-fe-challenge
 
 # Install dependencies
 npm install
