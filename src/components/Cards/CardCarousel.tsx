@@ -26,9 +26,15 @@ export default function CardCarousel({
   const [activeIndex, setActiveIndex] = useState(0);
   const [showCardDetails, setShowCardDetails] = useState(false);
 
+  const getCardsJsonPath = () => {
+    const basePath = window.location.pathname.replace(/\/$/, "");
+    return `${basePath}/mocks/cards.json`;
+  };
+
   useEffect(() => {
     if (cards.length === 0) {
-      fetch("/mocks/cards.json")
+      const path = getCardsJsonPath();
+      fetch(path)
         .then((res) => res.json())
         .then((data: Card[]) => {
           setCards(data);
